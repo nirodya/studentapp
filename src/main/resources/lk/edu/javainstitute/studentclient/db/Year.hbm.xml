@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 31, 2016 12:59:48 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="lk.edu.javainstitute.studentclient.db.Year" table="year" catalog="studentapp" optimistic-lock="version">
+        <id name="idyear" type="java.lang.Integer">
+            <column name="idyear" />
+            <generator class="identity" />
+        </id>
+        <property name="year" type="string">
+            <column name="year" length="45" />
+        </property>
+        <set name="subjects" table="subject" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="year_idyear" not-null="true" />
+            </key>
+            <one-to-many class="lk.edu.javainstitute.studentclient.db.Subject" />
+        </set>
+    </class>
+</hibernate-mapping>

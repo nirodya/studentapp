@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 31, 2016 12:59:48 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="lk.edu.javainstitute.studentclient.db.Contact" table="contact" catalog="studentapp" optimistic-lock="version">
+        <id name="idContact" type="java.lang.Integer">
+            <column name="idContact" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" />
+        </property>
+        <property name="contact1" type="string">
+            <column name="contact1" />
+        </property>
+        <property name="contact2" type="string">
+            <column name="contact2" />
+        </property>
+    </class>
+</hibernate-mapping>
