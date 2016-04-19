@@ -14,6 +14,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/site.min.js"></script>
+        <title>Add Event</title>
     </head>
     <body>
         <h1 style="width: 100; text-align: center">Add an Event</h1>

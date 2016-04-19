@@ -4,9 +4,25 @@
         <servlet-name>AddEvent</servlet-name>
         <jsp-file>/WEB-INF/AddEvent.jsp</jsp-file>
     </servlet>
+    <servlet>
+        <servlet-name>AddSubject</servlet-name>
+        <jsp-file>/WEB-INF/AddSubject.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>SubjectSearch</servlet-name>
+        <jsp-file>/WEB-INF/subjectsearch.jsp</jsp-file>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AddEvent</servlet-name>
         <url-pattern>/addevent</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddSubject</servlet-name>
+        <url-pattern>/addsubject</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SubjectSearch</servlet-name>
+        <url-pattern>/subjectsearch.niro</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
